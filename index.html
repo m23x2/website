@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Source+Code+Pro:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 1em;
+        font-weight: 300;
+        line-height: 1.5;
+      }
+
+      article {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1em;
+        width: 18em;
+      }
+
+      p, h1 {
+        line-height: 1.5;
+        margin: 1.5em 0 0 0;
+      }
+
+      #total {
+        word-wrap: break-word;
+        color: black;
+        /* overflow: hidden; */
+        opacity: 6%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        word-break: break-all;
+      }
+
+      body b,
+      h1 {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 1em;
+        font-weight: 600;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      a::before {
+        content: '\00B7\00A0';
+        color: red;
+      }
+
+      a:hover {
+        color: black;
+        text-decoration: none;
+        color: red;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div id="total"></div>
+
+    <article>
+      <h1>23×2 fundacja</h1>
+
+      <p>
+        <b>&sup1;</b>/wspiera działania artystyczne i&nbsp;badawcze w&nbsp;psychologii+sztuce, promuje świadomość artystyczną, wartości humanistyczne oraz&nbsp;wiedzę psychologiczną,</p>
+
+      <p>
+        <b>&sup2;</b>/w&nbsp;swej działalności kieruje&nbsp;się zasadami partycypacji, rzetelności, równości, niedyskryminacji, obiektywizmu i&nbsp;profesjonalizmu.</p>
+
+      <p>warszawa, maj 2022
+
+
+
+        <p><a href="#">statut <small>(PDF)</small></a>
+          <a href="mailto:fundacja@23x2.org">fundacja@23x2.org</a>
+        </p>
+
+    </article>
+    <script>
+      function makeid(length) {
+        var result = '';
+        var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        var charactersLength = characters.length;
+        for (var i = 0; i < length; i++) {
+          result += characters.charAt(Math.floor(Math.random() *
+            charactersLength));
+        }
+        return result;
+      }
+
+
+      window.setInterval(function() {
+          document.getElementById('total').innerHTML = makeid(10000);
+      }, 100);
+
+
+    </script>
+  </body>
+
+</html>
