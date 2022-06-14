@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,7 +10,7 @@
       html, body {
         margin: 0;
         padding: 0;
-        font-size: clamp(1rem, -0.875rem + 8.333vw, 3.5rem);
+        font-size: 6vh /* clamp(1rem, -0.875rem + 8.333vw, 3.5rem) */;
       }
 
       body {
@@ -59,6 +60,7 @@
       a {
         text-decoration: none;
         color: black;
+        transition: color .5s;
       }
 
       a::after {
