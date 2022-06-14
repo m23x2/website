@@ -18,35 +18,37 @@
         font-family: 'Source Code Pro', monospace;
         font-size: .5em;
         font-weight: 300;
-        line-height: 1.5;
+        line-height: 1.5em;
       }
 
       article {
         margin-left: auto;
         margin-right: auto;
-        margin-top: 1em;
-        width: 18em;
+        margin-top: 1.5em;
+        width: clamp(18em, 80vw, 130vh);
+        line-height: 1.5;
       }
 
       p, h1 {
+        margin: 1em 0 0 0;
         line-height: 1.5;
-        margin: 1.5em 0 0 0;
       }
 
       #total {
         font-size: 1em;
         font-weight: 600;
-        word-wrap: break-word;
         color: black;
         /* overflow: hidden; */
         opacity: 6%;
         position: absolute;
         top: 0;
-        bottom: 0;
         z-index: -1;
         word-break: break-all;
         width: 100%;
         overflow: hidden;
+        display: inline-block;
+        height: 100vh; /*THis will set height equal to the height of windows*/
+        width: 100vw/*This will set width equal to width of windows*/
       }
 
       body b,
